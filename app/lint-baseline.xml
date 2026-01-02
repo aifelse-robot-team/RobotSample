@@ -1,0 +1,2901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.13.2" type="baseline" client="gradle" dependencies="false" name="AGP (8.13.2)" variant="all" version="8.13.2">
+
+    <issue
+        id="MissingPermission"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        errorLine1="            mAudioRecorder = new AudioRecord("
+        errorLine2="                             ^">
+        <location
+            file="src/main/java/com/ainirobot/robotos/audio/AudioManager.java"
+            line="73"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This TextView should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            String fileHeader = String.format(&quot;P5\n%d %d\n255\n&quot;, map.bitmap.getWidth(), map"
+        errorLine2="                                ^">
+        <location
+            file="src/main/java/com/ainirobot/robotos/maputils/MapppUtils.java"
+            line="455"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="MissingConstraints"
+        message="This view is not constrained vertically: at runtime it will jump to the top unless you add a vertical constraint"
+        errorLine1="    &lt;com.ainirobot.robotos.view.BackView"
+        errorLine2="     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_nav.xml"
+            line="14"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        errorLine1="    public static String TEST_FILE_NAME = &quot;/sdcard/audio.wav&quot;;"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/audio/AudioManager.java"
+            line="23"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        message="Do not hardcode &quot;/sdcard/&quot;; use `Environment.getExternalStorageDirectory().getPath()` instead"
+        errorLine1="        TEST_FILE_NAME = &quot;/sdcard/audio_&quot; + System.currentTimeMillis() + &quot;.wav&quot;;"
+        errorLine2="                         ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/audio/AudioManager.java"
+            line="56"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="AppBundleLocaleChanges"
+        message="Found dynamic locale changes, but did not find corresponding Play Core library calls for downloading languages and splitting by language is not disabled in the `bundle` configuration"
+        errorLine1="        conf.setLocale(locale);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/maputils/SpecialPlaceUtil.java"
+            line="83"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_audio_layout, null, false);"
+        errorLine2="                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/AudioFragment.java"
+            line="33"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_body_follow_layout, null, false);"
+        errorLine2="                                                                            ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/BodyFollowFragment.java"
+            line="57"
+            column="77"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_charge_layout, null, false);"
+        errorLine2="                                                                       ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/ChargeFragment.java"
+            line="45"
+            column="72"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View view =  LayoutInflater.from(context).inflate(R.layout.dialog_reset, null);"
+        errorLine2="                                                                                 ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/maputils/DialogConfirm.java"
+            line="43"
+            column="82"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_electric_door_action_control_layout, null, false);"
+        errorLine2="                                                                                             ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/ElectricDoorActionControlFragment.java"
+            line="36"
+            column="94"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_electric_door_control_layout, null, false);"
+        errorLine2="                                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/ElectricDoorControlFragment.java"
+            line="39"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_failed_layout,null,false);"
+        errorLine2="                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/FailedFragment.java"
+            line="34"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_lead_layout,null,false);"
+        errorLine2="                                                                    ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/LeadFragment.java"
+            line="52"
+            column="69"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_location_layout, null, false);"
+        errorLine2="                                                                         ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/LocationFragment.java"
+            line="53"
+            column="74"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_main_layout,null,false);"
+        errorLine2="                                                                    ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/MainFragment.java"
+            line="42"
+            column="69"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = inflater.inflate(R.layout.fragment_nav, null, false);"
+        errorLine2="                                                            ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/NavFragment.java"
+            line="69"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_navigation_layout, null, false);"
+        errorLine2="                                                                           ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/NavigationFragment.java"
+            line="60"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_speech_layout,null,false);"
+        errorLine2="                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/SpeechFragment.java"
+            line="52"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_sport_layout, null, false);"
+        errorLine2="                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/SportFragment.java"
+            line="103"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        errorLine1="        View root = mInflater.inflate(R.layout.fragment_vision_layout,null,false);"
+        errorLine2="                                                                      ~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/VisionFragment.java"
+            line="54"
+            column="71"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1"
+        errorLine1="    implementation &apos;androidx.appcompat:appcompat:1.6.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="48"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="    implementation &apos;androidx.constraintlayout:constraintlayout:2.1.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="49"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0"
+        errorLine1="    androidTestImplementation &apos;androidx.test.ext:junit:1.1.5&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="55"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0"
+        errorLine1="    androidTestImplementation &apos;androidx.test.espresso:espresso-core:3.5.1&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="56"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of com.google.code.gson:gson than 2.10.1 is available: 2.13.2"
+        errorLine1="    api &apos;com.google.code.gson:gson:2.10.1&apos;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="57"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="    android:layout_width=&quot;940px&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="4"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_width=&quot;90px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_height=&quot;90px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="12"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginLeft=&quot;845px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginRight=&quot;5px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginTop=&quot;80px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:textSize=&quot;46px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="27"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginLeft=&quot;50px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="35"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginTop=&quot;30px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="36"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginRight=&quot;50px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:textSize=&quot;46px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="41"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        app:layout_goneMarginTop=&quot;166px&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="43"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_height=&quot;2px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="48"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginTop=&quot;80px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="49"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_height=&quot;140px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="57"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:textSize=&quot;40px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="62"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_height=&quot;80px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="69"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_marginTop=&quot;30px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="70"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:layout_height=&quot;140px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="78"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        message="Avoid using &quot;`px`&quot; as units; use &quot;`dp`&quot; instead"
+        errorLine1="        android:textSize=&quot;40px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="83"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="IntentFilterExportedReceiver"
+        message="As of Android 12, `android:exported` must be set; use `true` to make the activity available to other apps, and `false` otherwise. For launcher activities, this should be set to `true`."
+        errorLine1="        &lt;activity"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="21"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ExpiredTargetSdkVersion"
+        message="Google Play requires that apps target API level 33 or higher."
+        errorLine1="        targetSdkVersion 29"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 17"
+        errorLine1="    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/maputils/SpecialPlaceUtil.java"
+            line="76"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 29. Merge all the resources in this folder into `drawable`.">
+        <location
+            file="src/main/res/drawable-v24"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 29. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <location
+            file="src/main/res/mipmap-anydpi-v26"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `MainActivity` which has field `mContent` pointing to `FrameLayout`); this is a memory leak"
+        errorLine1="    private static MainActivity mInstance;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/MainActivity.java"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `RobotOSApplication` which has field `mContext` pointing to `Context`); this is a memory leak"
+        errorLine1="    private static RobotOSApplication mApplication;"
+        errorLine2="            ~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/application/RobotOSApplication.java"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.alpha_70` appears to be unused"
+        errorLine1="    &lt;color name=&quot;alpha_70&quot;>#B30C1235&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;black&quot;>#000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.upgrade_press` appears to be unused"
+        errorLine1="    &lt;color name=&quot;upgrade_press&quot;>#EFF1F2&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="12"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.ota_network_radio_stoke` appears to be unused"
+        errorLine1="    &lt;color name=&quot;ota_network_radio_stoke&quot;>#CCD2D6&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="14"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.ota_upgrade_no_complete` appears to be unused"
+        errorLine1="    &lt;color name=&quot;ota_upgrade_no_complete&quot;>#FF713C&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="15"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_foreground` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_foreground.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.layer_list_progress_drawable_1` appears to be unused"
+        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/layer_list_progress_drawable_1.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.map_setting_back` appears to be unused">
+        <location
+            file="src/main/res/drawable/map_setting_back.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.shape_progressbar_bg` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/shape_progressbar_bg.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.shape_progressbar_progress` appears to be unused"
+        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/shape_progressbar_progress.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_zh_CN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_zh_CN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="45"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_en_US` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_en_US&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="50"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_ko_KR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_ko_KR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="55"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_ja_JP` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_ja_JP&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="60"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_zh_GD` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_zh_GD&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="65"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_th_TH` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_th_TH&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="70"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_de_DE` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_de_DE&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="75"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_es_ES` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_es_ES&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="80"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_en_GB` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_en_GB&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="85"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_da_DK` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_da_DK&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="90"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_sv_SE` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_sv_SE&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="95"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_fi_FI` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_fi_FI&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="100"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_nb_NO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_nb_NO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="105"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_fr_FR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_fr_FR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="110"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_nl_NL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_nl_NL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="115"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_ru_RU` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_ru_RU&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="120"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_pl_PL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_pl_PL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="125"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_pt_PT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_pt_PT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="130"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_it_IT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_it_IT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="135"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_ro_RO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_ro_RO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="140"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_ms_MY` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_ms_MY&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="145"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_vi_VN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_vi_VN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="150"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_id_ID` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_id_ID&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="155"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.SpecialPlace_fil_PH` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;SpecialPlace_fil_PH&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="160"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_zh_CN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_zh_CN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="167"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_en_US` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_en_US&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="173"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_ko_KR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_ko_KR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="179"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_ja_JP` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_ja_JP&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="185"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_zh_GD` appears to be unused"
+        errorLine1=" &lt;string-array name=&quot;MiniTob_SpecialPlace_zh_GD&quot;>"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="191"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_th_TH` appears to be unused"
+        errorLine1=" &lt;string-array name=&quot;MiniTob_SpecialPlace_th_TH&quot;>"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="197"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_de_DE` appears to be unused"
+        errorLine1=" &lt;string-array name=&quot;MiniTob_SpecialPlace_de_DE&quot;>"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="203"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_es_ES` appears to be unused"
+        errorLine1=" &lt;string-array name=&quot;MiniTob_SpecialPlace_es_ES&quot;>"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="209"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_en_GB` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_en_GB&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="215"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_da_DK` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_da_DK&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="221"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_sv_SE` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_sv_SE&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="227"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_fi_FI` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_fi_FI&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="233"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_nb_NO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_nb_NO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="239"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_fr_FR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_fr_FR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="245"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_nl_NL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_nl_NL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="251"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_ru_RU` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_ru_RU&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="257"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_pl_PL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_pl_PL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="263"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_pt_PT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_pt_PT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="269"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_it_IT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_it_IT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="275"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_ro_RO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_ro_RO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="281"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_ms_MY` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_ms_MY&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="287"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_vi_VN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_vi_VN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="293"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_id_ID` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_id_ID&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="299"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.MiniTob_SpecialPlace_fil_PH` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;MiniTob_SpecialPlace_fil_PH&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="305"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_zh_TW` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_zh_TW&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="313"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_zh_GD` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_zh_GD&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="317"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_zh_CN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_zh_CN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="321"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_en_US` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_en_US&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="325"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ko_KR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ko_KR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="329"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ja_JP` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ja_JP&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="333"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_th_TH` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_th_TH&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="337"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_de_DE` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_de_DE&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="341"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ru_RU` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ru_RU&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="345"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_tr_TR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_tr_TR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="349"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_es_ES` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_es_ES&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="353"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_en_GB` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_en_GB&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="357"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_pt_PT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_pt_PT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="361"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_fr_FR` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_fr_FR&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="365"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_it_IT` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_it_IT&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="369"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_nl_NL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_nl_NL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="373"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ar_SA` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ar_SA&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="377"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_pl_PL` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_pl_PL&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="381"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_id_ID` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_id_ID&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="385"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_in_ID` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_in_ID&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="389"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_da_DK` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_da_DK&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="393"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ms_MY` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ms_MY&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="397"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_sv_SE` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_sv_SE&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="401"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_fi_FI` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_fi_FI&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="405"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_nb_NO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_nb_NO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="409"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_ro_RO` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_ro_RO&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="413"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_vi_VN` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_vi_VN&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="417"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.array.Saiph_SpecialPlace_fil_PH` appears to be unused"
+        errorLine1="    &lt;string-array name=&quot;Saiph_SpecialPlace_fil_PH&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/special_place_arrays.xml"
+            line="421"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sdk_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sdk_info&quot;>SDK Sample&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.basic_scene` appears to be unused"
+        errorLine1="    &lt;string name=&quot;basic_scene&quot;>Basic scene&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.output_result` appears to be unused"
+        errorLine1="    &lt;string name=&quot;output_result&quot;>Result:&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.vision_un_register` appears to be unused"
+        errorLine1="    &lt;string name=&quot;vision_un_register&quot;>Unregister&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.vision_warning2` appears to be unused"
+        errorLine1="    &lt;string name=&quot;vision_warning2&quot;>No api to delete person at the moment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_blank_fragment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hello_blank_fragment&quot;>Hello blank fragment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.get_place_fail` appears to be unused"
+        errorLine1="    &lt;string name=&quot;get_place_fail&quot;>R.string.get_place_fail&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="72"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.do_not_move_robot` appears to be unused"
+        errorLine1="    &lt;string name=&quot;do_not_move_robot&quot;>Please don\&apos;t move the robot&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.starting_progress` appears to be unused"
+        errorLine1="    &lt;string name=&quot;starting_progress&quot;>Creating Map, Please Wait…&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upgrade_next_time_normal` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/upgrade_next_time_normal.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upgrade_next_time_press` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/upgrade_next_time_press.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upgrade_now_normal` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/upgrade_now_normal.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.upgrade_now_press` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/upgrade_now_press.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        message="This `LinearLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="26"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is possibly unnecessary"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_audio_layout.xml"
+            line="9"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is unnecessary"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_basic_layout.xml"
+            line="8"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is possibly unnecessary"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="9"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="12"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_vision_layout.xml"
+            line="6"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="12"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_vision_layout.xml"
+            line="6"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive icon is missing a monochrome tag"
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive roundIcon is missing a monochrome tag"
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/delete_black_btn.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/delete_black_btn.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/map_point_error_icon.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/map_point_error_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/map_setting_back.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/map_setting_back.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/normal_bubble_s.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/normal_bubble_s.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/robot.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/robot.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/robot_bottom.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/robot_bottom.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/robot_laser.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/robot_laser.png"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="12"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="18"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="30"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="36"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="48"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="54"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="12"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="18"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="30"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="36"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="48"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="54"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_lead_layout.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="12"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="16"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="53"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="66"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="93"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `8sp`"
+        errorLine1="            android:textSize=&quot;8sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_lead_layout.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="12"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="16"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `MapView` overrides `onTouchEvent` but not `performClick`"
+        errorLine1="    public boolean onTouchEvent(MotionEvent event) {"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/view/MapView.java"
+            line="319"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`onTouch` should call `View#performClick` when a click is detected"
+        errorLine1="            public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                           ~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/SportFragment.java"
+            line="74"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="9"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/splash_layout.xml"
+            line="9"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                check_pass_gate_status.setText(&quot;onError result: &quot; + errorCode + &quot; message: &quot; + errorString);"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/NavigationFragment.java"
+            line="227"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                check_pass_gate_status.setText(&quot;onError result: &quot; + errorCode + &quot; message: &quot; + errorString);"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/NavigationFragment.java"
+            line="227"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                check_pass_gate_status.setText(&quot;onError result: &quot; + errorCode + &quot; message: &quot; + errorString);"
+        errorLine2="                                                                                ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/NavigationFragment.java"
+            line="227"
+            column="81"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="        movingText.setText(&quot;moving...tap to stop&quot;);"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ainirobot/robotos/fragment/SportFragment.java"
+            line="66"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;开始人体跟随&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;开始人体跟随&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_body_follow_layout.xml"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;停止人体跟随&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;停止人体跟随&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_body_follow_layout.xml"
+            line="17"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;会议间&quot;, should use `@string` resource"
+        errorLine1="            android:hint=&quot;会议间&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;目标点位是否经过闸机&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;目标点位是否经过闸机&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;正在检查中，请稍后...&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;正在检查中，请稍后...&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;闸机入口名字&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;闸机入口名字&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="78"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;闸机出口名字&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;闸机出口名字&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="88"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Hello&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;moving...tap to stop&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;moving...tap to stop&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/moving_dialog_layout.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;OrionStar Robot App Sample&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;OrionStar Robot App Sample&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/splash_layout.xml"
+            line="18"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;845px&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginLeft=&quot;845px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;5px&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;5px&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_reset.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_audio_layout.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_audio_layout.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_charge_layout.xml"
+            line="52"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_action_control_layout.xml"
+            line="58"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_electric_door_control_layout.xml"
+            line="58"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="        android:layout_gravity=&quot;right|bottom&quot;"
+        errorLine2="                                ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_failed_layout.xml"
+            line="25"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_failed_layout.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;10dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_lead_layout.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;10dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_lead_layout.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="64"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_location_layout.xml"
+            line="92"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="        android:layout_gravity=&quot;right|bottom&quot;"
+        errorLine2="                                ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_main_layout.xml"
+            line="123"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_main_layout.xml"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;10dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="77"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_layout.xml"
+            line="86"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;2dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;2dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;2dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;2dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;2dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;2dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_speech_layout.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="80"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="89"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_sport_layout.xml"
+            line="98"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;15dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_vision_layout.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;15dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_vision_layout.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `drawableLeft`; already defining `drawableStart` with `targetSdkVersion` 29"
+        errorLine1="        android:drawableLeft=&quot;@drawable/ic_back_arrow&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_back_view.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="44"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="46"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="58"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;10dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_result_view.xml"
+            line="59"
+            column="9"/>
+    </issue>
+
+</issues>

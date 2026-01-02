@@ -1,12 +1,16 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdk 36
+    buildToolsVersion '36.1.0'
+    namespace 'com.ainirobot.robotos'
 
     defaultConfig {
         applicationId "com.ainirobot.robotos"
-        minSdkVersion 16
+        minSdk 29
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -14,28 +18,46 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
-    }
-
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            // Enable resource shrinking to remove unused resources
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // It configures the Java compiler directly.
+    tasks.withType(JavaCompile).configureEach {
+        options.compilerArgs += ["-Xlint:deprecation"]
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // Updated these to versions more compatible with AGP 8.x
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation files('libs\\robotservice.jar')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    api 'com.google.code.gson:gson:2.7'
+
+    implementation files('libs/robotservice.jar')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    api 'com.google.code.gson:gson:2.10.1'
 }
